@@ -1,0 +1,24 @@
+{
+  "name": "@evergreen-realm/dsh-memory-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepSeek Harness Cordis bundle (normal desktop mode) for Evergreen shared EverOS + GBrain memory",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "node ../../scripts/build-dist.mjs",
+    "test": "node --test test/*.test.ts"
+  }
+}

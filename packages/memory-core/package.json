@@ -1,0 +1,33 @@
+{
+  "name": "@evergreen-realm/memory-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared Hybrid RAG + KAG-lite + MAG memory core for OpenCode and DeepSeek Harness",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./types": "./dist/types.js",
+    "./redactor": "./dist/redactor.js",
+    "./budget": "./dist/budget.js",
+    "./retrieval": "./dist/retrieval.js",
+    "./kag-lite": "./dist/kag-lite.js",
+    "./everos-client": "./dist/everos-client.js",
+    "./gbrain-client": "./dist/gbrain-client.js",
+    "./corpus-bridge": "./dist/corpus-bridge.js",
+    "./remote-bridges": "./dist/remote-bridges.js",
+    "./preflight": "./dist/preflight.js"
+  },
+  "scripts": {
+    "build": "node ../../scripts/build-dist.mjs",
+    "test": "node --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}

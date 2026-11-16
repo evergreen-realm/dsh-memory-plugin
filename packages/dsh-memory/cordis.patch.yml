@@ -1,0 +1,14 @@
+- insert:
+    - id: evergreen-memory
+      name: "@evergreen-realm/dsh-memory-plugin"
+      config:
+        everosUrl: !!js |-
+          process.env.EVEROS_URL || 'http://127.0.0.1:8000'
+        gbrainUrl: !!js |-
+          process.env.GBRAIN_URL || 'http://127.0.0.1:3131'
+        recallMethod: !!js |-
+          process.env.EVERGREEN_RECALL_METHOD || 'hybrid'
+        enableKagLite: true
+        recallTopK: 5
+        recallMaxChars: 4000
+        dailyWriteCap: 250

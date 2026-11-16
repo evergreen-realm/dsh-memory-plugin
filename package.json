@@ -1,0 +1,14 @@
+{
+  "name": "@evergreen-realm/dsh-memory-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepSeek Harness memory plugin monorepo — EverOS + GBrain shared memory",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build-dist.mjs",
+    "test": "node --test packages/memory-core/test/*.test.ts packages/dsh-memory/test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  }
+}
